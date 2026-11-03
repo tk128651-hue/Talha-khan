@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Login | Bakerz Bite</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/login.css">
+<script src="assets/auth.js"></script>
+<script>protectLoginPage();</script>
+</head>
+<body class="login-page">
+<main class="login-shell">
+<section class="login-visual">
+<a class="brand" href="register.html"><i class="bi bi-cake2-fill me-2"></i>Bakerz <span>Bite</span></a>
+<div class="visual-content"><h1>Welcome<br>back.</h1><p>Login to continue to Bakerz Bite and explore fresh cakes, pastries, cookies and more.</p></div>
+<small>© 2026 Bakerz Bite Bakery</small>
+</section>
+<section class="login-form-area"><div class="form-wrap">
+<a class="back" href="register.html"><i class="bi bi-arrow-left me-1"></i>Back to registration</a>
+<h2>Welcome back</h2><p class="subtitle" id="welcomeText">Login with your saved account.</p>
+<form id="loginForm">
+<div class="mb-3"><label class="form-label">Email Address</label><input id="email" type="email" class="form-control" required placeholder="you@example.com"></div>
+<div class="mb-3"><label class="form-label">Password</label><div class="password-box"><input id="password" type="password" class="form-control" required placeholder="Your password"><button type="button" class="toggle-password" id="togglePassword" aria-label="Show password"><i class="bi bi-eye"></i></button></div></div>
+<div class="d-flex justify-content-between align-items-center mb-3"><label class="remember"><input type="checkbox" id="remember" class="me-1"> Remember on this device</label><a href="#" id="forgotLink" class="small-link">Forgot password?</a></div>
+<button class="login-btn" type="submit">Login <i class="bi bi-box-arrow-in-right ms-1"></i></button>
+<div id="status" class="status mt-3"></div>
+</form>
+<p class="text-center mt-4 mb-0 text-secondary">Need a new account? <a href="register.html" class="small-link">Create an account</a></p>
+</div></section>
+</main>
+<script>
+const account=getSavedAccount();
+if(account){
+  document.getElementById('email').value=account.email||'';
+  document.getElementById('welcomeText').textContent='Welcome back, '+(account.name||'customer')+'. Login with your saved account.';
+}
+const f=document.getElementById('loginForm'),s=document.getElementById('status'),pw=document.getElementById('password');
+document.getElementById('togglePassword').onclick=()=>{
+  pw.type=pw.type==='password'?'text':'password';
+  document.querySelector('#togglePassword i').className=pw.type==='password'?'bi bi-eye':'bi bi-eye-slash';
+};
+f.onsubmit=e=>{
+  e.preventDefault();
+  const email=document.getElementById('email').value.trim().toLowerCase(), pass=pw.value;
+  const saved=getSavedAccount();
+  if(!saved){ location.replace('register.html'); return; }
+  if(email===saved.email.toLowerCase() && pass===saved.password){
+    startSession();
+    s.className='status mt-3 success';
+    s.textContent='Login successful! Opening Bakerz Bite...';
+    setTimeout(()=>location.replace('index.html'),500);
+  } else {
+    s.className='status mt-3 error';
+    s.textContent='Email or password is incorrect.';
+  }
+};
+document.getElementById('forgotLink').onclick=e=>{
+  e.preventDefault();
+  s.className='status mt-3';
+  s.textContent='For this offline demo, create a new account if you no longer remember the saved password.';
+};
+</script>
+</body></html>

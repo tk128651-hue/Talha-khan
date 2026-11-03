@@ -1,0 +1,8 @@
+[
+  {"category":"Cakes","name":"Midnight Chocolate Cake","price":1650,"note":"Chocolate sponge with ganache."},
+  {"category":"Cakes","name":"Strawberry Dream","price":1850,"note":"Vanilla, strawberry and cream."},
+  {"category":"Pastries","name":"Almond Croissant","price":420,"note":"Laminated pastry with almond cream."},
+  {"category":"Cookies","name":"Classic Choco Chip","price":280,"note":"Soft-center chocolate chip cookie."},
+  {"category":"Pies","name":"Apple Crumble Pie","price":950,"note":"Cinnamon apples with crumble topping."},
+  {"category":"Merchandise","name":"Bakerz Bite Mug","price":650,"note":"350 ml ceramic mug."}
+]

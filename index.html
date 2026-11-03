@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bakerz Bite - Fresh cakes, pastries, cookies, pies and merchandise.">
+  <title>Bakerz Bite | Where Smiles Are Served Daily</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/auth.js"></script>
+  <script>protectMainSite();</script>
+</head>
+<body>
+  <div id="preloader"><div class="loader"><span></span><span></span><span></span></div><p>Warming the oven...</p></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-mark"><i class="bi bi-cup-hot-fill"></i></span>
+        <span><b>Bakerz</b> Bite</span>
+      </a>
+      <div class="visitor-pill ms-auto me-2 d-none d-lg-flex"><i class="bi bi-people-fill"></i> Visitors: <span id="visitorCount">0</span></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" id="logoutLink"><i class="bi bi-box-arrow-right me-1"></i>Logout</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-brand" href="#feedback">Rate Us <i class="bi bi-star-fill"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-shape shape-one"></div><div class="hero-shape shape-two"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-copy">
+            <span class="eyebrow"><i class="bi bi-stars"></i> Fresh from our oven</span>
+            <h1>Sweet moments,<br><em>freshly baked.</em></h1>
+            <p class="lead">Handcrafted cakes, flaky pastries, buttery cookies and comforting pies made with real ingredients and a whole lot of love.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#products" class="btn btn-brand btn-lg">Explore Menu <i class="bi bi-arrow-right"></i></a>
+              <a href="#offers" class="btn btn-outline-brand btn-lg">Today's Offers</a>
+            </div>
+            <div class="hero-stats row g-3 mt-4">
+              <div class="col-4"><strong>300+</strong><span>Fresh bakes</span></div>
+              <div class="col-4"><strong>100%</strong><span>Real butter</span></div>
+              <div class="col-4"><strong>4.9/5</strong><span>Happy guests</span></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-collage">
+              <img class="hero-main-img" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85" alt="Chocolate cake">
+              <div class="floating-card floating-top"><i class="bi bi-heart-fill"></i><div><b>Baked with love</b><small>Every single morning</small></div></div>
+              <div class="floating-card floating-bottom"><span class="mini-rating">★★★★★</span><b>4.9</b><small>Customer rating</small></div>
+              <div class="blob-label">Bakerz<br><span>Bite</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip py-4">
+      <div class="container"><div class="row g-2 justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2"><a href="#products" data-filter-link="Cakes" class="category-card"><span>🍰</span><b>Cakes</b><small>Celebration ready</small></a></div>
+        <div class="col-6 col-md-3 col-lg-2"><a href="#products" data-filter-link="Pastries" class="category-card"><span>🥐</span><b>Pastries</b><small>Flaky & golden</small></a></div>
+        <div class="col-6 col-md-3 col-lg-2"><a href="#products" data-filter-link="Cookies" class="category-card"><span>🍪</span><b>Cookies</b><small>Buttery bites</small></a></div>
+        <div class="col-6 col-md-3 col-lg-2"><a href="#products" data-filter-link="Pies" class="category-card"><span>🥧</span><b>Pies</b><small>Classic comfort</small></a></div>
+        <div class="col-6 col-md-3 col-lg-2"><a href="#products" data-filter-link="Merchandise" class="category-card"><span>☕</span><b>Merch</b><small>Take us home</small></a></div>
+      </div></div>
+    </section>
+
+    <section id="products" class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">Our signature selection</span>
+          <h2>Made fresh. <em>Made to smile.</em></h2>
+          <p>Browse our best-loved treats and tap any card for ingredients, details and a closer look.</p>
+        </div>
+        <div class="filter-panel">
+          <div class="input-group search-box"><span class="input-group-text"><i class="bi bi-search"></i></span><input id="searchInput" type="search" class="form-control" placeholder="Search cakes, cookies, coffee..."></div>
+          <select id="categoryFilter" class="form-select"><option value="All">All categories</option><option>Cakes</option><option>Pastries</option><option>Cookies</option><option>Pies</option><option>Merchandise</option></select>
+          <select id="priceFilter" class="form-select"><option value="All">Any price</option><option value="low">Under Rs. 800</option><option value="mid">Rs. 800 - 1500</option><option value="high">Above Rs. 1500</option></select>
+          <button id="clearFilters" class="btn btn-light"><i class="bi bi-arrow-counterclockwise"></i> Reset</button>
+        </div>
+        <div id="productGrid" class="row g-4 mt-2"></div>
+        <div id="noResults" class="empty-state d-none"><i class="bi bi-emoji-frown"></i><h4>No treats found</h4><p>Try another search or reset your filters.</p></div>
+      </div>
+    </section>
+
+    <section id="offers" class="offers-section section-padding">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5"><span class="eyebrow">Limited-time goodness</span><h2>Sweet deals for <em>sweet people.</em></h2><p>Fresh offers are updated regularly. Pick your favorite and show the code at checkout.</p><a href="#contact" class="btn btn-dark">Ask about an offer <i class="bi bi-arrow-right"></i></a></div>
+          <div class="col-lg-7"><div class="row g-3" id="offerGrid"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-padding bg-cream">
+      <div class="container">
+        <div class="section-heading d-flex flex-wrap align-items-end justify-content-between gap-3"><div><span class="eyebrow">A peek inside</span><h2>Our <em>happy place.</em></h2></div><p class="mb-1">Tap an image to open the gallery.</p></div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section-padding about-section">
+      <div class="container"><div class="row align-items-center g-5">
+        <div class="col-lg-6"><div class="about-image-wrap"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Baker preparing pastries"><div class="experience-badge"><b>Since</b><strong>2018</strong><small>Baking smiles</small></div></div></div>
+        <div class="col-lg-6"><span class="eyebrow">Our story</span><h2>Good ingredients.<br><em>Good people.</em></h2><p>At Bakerz Bite, we believe a bakery should feel like a warm hug. We use real butter, fresh cream and carefully selected ingredients, then bake in small batches so every bite tastes like it just came from the oven.</p><p>From birthday cakes to your everyday coffee break, our goal is simple: make ordinary moments feel special.</p><div class="about-points"><div><i class="bi bi-check-circle-fill"></i><span>Freshly baked in-store every day</span></div><div><i class="bi bi-check-circle-fill"></i><span>No shortcuts on quality</span></div><div><i class="bi bi-check-circle-fill"></i><span>Friendly service, every visit</span></div></div></div>
+      </div></div>
+    </section>
+
+    <section id="faq" class="section-padding bg-cream"><div class="container"><div class="section-heading text-center"><span class="eyebrow">Need to know</span><h2>Frequently asked <em>questions.</em></h2></div><div class="accordion faq-wrap" id="faqAccordion">
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Do you take custom cake orders?</button></h2><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. Share your theme, serving size and preferred date through our contact section. We recommend placing custom orders at least 48 hours ahead.</div></div></div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Are ingredients listed for each product?</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. Open any product card to see its ingredient list and key product details.</div></div></div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">Can I buy Bakerz Bite merchandise?</button></h2><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Absolutely. Our branded mugs, bags, glasses and trays are listed under the Merchandise category.</div></div></div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">Where are you located?</button></h2><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Our demo project uses a Karachi address for the contact experience. Replace it with your actual store details before submission or deployment.</div></div></div>
+    </div></div></section>
+
+    <section id="feedback" class="section-padding feedback-section"><div class="container"><div class="row g-5 align-items-center"><div class="col-lg-5"><span class="eyebrow">Tell us honestly</span><h2>How was your <em>sweet experience?</em></h2><p>Your rating and feedback are stored locally in this demo so the project works without a backend.</p><div id="savedFeedback" class="saved-feedback d-none"></div></div><div class="col-lg-7"><form id="feedbackForm" class="feedback-card"><div class="star-picker" aria-label="Rating"><button type="button" data-rating="1">★</button><button type="button" data-rating="2">★</button><button type="button" data-rating="3">★</button><button type="button" data-rating="4">★</button><button type="button" data-rating="5">★</button></div><input type="hidden" id="ratingValue" value="5"><div class="row g-3"><div class="col-md-6"><label class="form-label">Your name</label><input id="feedbackName" class="form-control" required placeholder="e.g. Ali"></div><div class="col-md-6"><label class="form-label">Email</label><input id="feedbackEmail" type="email" class="form-control" placeholder="you@example.com"></div><div class="col-12"><label class="form-label">Your feedback</label><textarea id="feedbackText" class="form-control" rows="4" required placeholder="Tell us about your visit..."></textarea></div><div class="col-12"><button class="btn btn-brand" type="submit">Submit feedback <i class="bi bi-send"></i></button></div></div></form></div></div></div></section>
+
+    <section id="contact" class="contact-section section-padding"><div class="container"><div class="row g-4"><div class="col-lg-5"><span class="eyebrow">Come say hello</span><h2>Let's make your day <em>delicious.</em></h2><p>For custom orders, catering, feedback or general questions, contact the Bakerz Bite team.</p><div class="contact-list"><a href="mailto:hello@bakerzbite.example"><i class="bi bi-envelope-fill"></i><span><small>Email</small>hello@bakerzbite.example</span></a><a href="tel:+923001234567"><i class="bi bi-telephone-fill"></i><span><small>Phone</small>+92 300 1234567</span></a><div><i class="bi bi-geo-alt-fill"></i><span><small>Address</small>123 Bakery Lane, Karachi, Pakistan</span></div><div><i class="bi bi-clock-fill"></i><span><small>Hours</small>Mon-Sun · 8:00 AM - 11:00 PM</span></div></div></div><div class="col-lg-7"><div class="contact-card"><div class="map-placeholder"><i class="bi bi-geo-alt-fill"></i><b>Bakerz Bite</b><span>Karachi, Pakistan</span></div><div class="sitemap"><b>Site map</b><div><a href="#home">Home</a><a href="#products">Menu</a><a href="#offers">Offers</a><a href="#gallery">Gallery</a><a href="#about">About Us</a><a href="#faq">FAQ</a><a href="#contact">Contact Us</a></div></div></div></div></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container d-flex flex-wrap justify-content-between align-items-center gap-3"><div>© <span id="year"></span> Bakerz Bite. <span>Where smiles are served daily.</span></div><div class="socials"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-whatsapp"></i></a></div></div></footer>
+
+  <div class="ticker"><div class="ticker-track"><span><i class="bi bi-clock"></i> <span id="dateTime">Loading time...</span></span><span><i class="bi bi-geo-alt"></i> <span id="locationText">Location: requesting permission...</span></span><span>✦ Fresh bakes daily ✦</span><span>✦ Real butter & cream ✦</span><span>✦ Bakerz Bite — Where smiles are served daily ✦</span></div></div>
+
+  <div class="modal fade" id="productModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content product-modal"><button class="btn-close" data-bs-dismiss="modal"></button><div class="row g-0"><div class="col-md-6"><img id="modalImage" src="" alt="" class="modal-product-image"></div><div class="col-md-6 p-4 p-lg-5"><span id="modalCategory" class="eyebrow"></span><h3 id="modalTitle"></h3><p id="modalDescription"></p><div class="modal-price" id="modalPrice"></div><hr><h6>Ingredients</h6><p id="modalIngredients" class="ingredients"></p><div class="spec-grid"><div><small>Freshness</small><b id="modalFreshness"></b></div><div><small>Serving</small><b id="modalServing"></b></div></div></div></div></div></div></div>
+
+  <div class="modal fade" id="galleryModal" tabindex="-1"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content gallery-modal"><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button><img id="galleryModalImage" src="" alt="Gallery image"></div></div></div>
+
+  <button id="backToTop" class="back-top"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const account=getSavedAccount();
+  const logout=document.getElementById('logoutLink');
+  if(account && logout){
+    logout.title='Logged in as '+account.email;
+    logout.onclick=e=>{e.preventDefault();endSession();location.replace('login.html');};
+  }
+});
+</script>
+</body>
+</html>

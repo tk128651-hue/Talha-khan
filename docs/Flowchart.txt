@@ -1,0 +1,23 @@
+BAKERZ BITE MAIN FLOW
+
+START
+  |
+  v
+Load index.html
+  |
+  v
+Load products + initialize localStorage
+  |
+  +----> Browse categories ----> Apply filters/search ----> Product cards
+  |                                                       |
+  |                                                       v
+  |                                                Product modal
+  |
+  +----> Offers / Gallery / About / FAQ / Contact
+  |
+  +----> Feedback form ----> Save rating + feedback locally
+  |
+  +----> Geolocation API ----> Live location ticker
+  |
+  v
+END / Continue browsing
